@@ -1,4 +1,4 @@
-
+.env
 ###> symfony/framework-bundle ###
 /.env.local
 /.env.local.php
@@ -10,3 +10,4 @@
 ###< symfony/framework-bundle ###
 
 text.txt
+.env

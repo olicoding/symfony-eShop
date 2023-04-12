@@ -1,5 +1,36 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+# Home page
+index:
+  path: /
+  controller: App\Controller\HomeController::index
+
+# Products
+products_list:
+  path: /products
+  controller: App\Controller\ProductController::index
+  methods: GET
+
+product_show:
+  path: /products/{id}
+  controller: App\Controller\ProductController::show
+  methods: GET
+  requirements:
+    id: '\d+'
+
+product_create:
+  path: /products/create
+  controller: App\Controller\ProductController::create
+  methods: [GET, POST]
+
+product_edit:
+  path: /products/{id}/edit
+  controller: App\Controller\ProductController::edit
+  methods: [GET, POST]
+  requirements:
+    id: '\d+'
+
+product_delete:
+  path: /products/{id}/delete
+  controller: App\Controller\ProductController::delete
+  methods: DELETE
+  requirements:
+    id: '\d+'
