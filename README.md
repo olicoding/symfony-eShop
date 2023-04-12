@@ -1,4 +1,4 @@
-# Symfony e-commerce
+# Symfony E-commerce
 
 This is a practice project for learning PHP, Symfony, Twig, and Doctrine. The goal of the project is to build an e-commerce website using the Symfony framework.
 
