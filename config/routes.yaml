@@ -4,7 +4,7 @@ index:
   controller: App\Controller\HomeController::index
 
 # Products
-products_list:
+product_list:
   path: /products
   controller: App\Controller\ProductController::index
   methods: GET
@@ -31,6 +31,6 @@ product_edit:
 product_delete:
   path: /products/{id}/delete
   controller: App\Controller\ProductController::delete
-  methods: DELETE
+  methods: [DELETE, POST]
   requirements:
     id: '\d+'

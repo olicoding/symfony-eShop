@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit {{ product.name }}{% endblock %}
+
+{% block body %}
+    <h1>Edit {{ product.name }}</h1>
+
+    {{ form_start(form) }}
+        {{ form_row(form.name) }}
+        {{ form_row(form.description) }}
+        {{ form_row(form.price) }}
+        {{ form_row(form._token) }}
+        <button type="submit">Save</button>
+    {{ form_end(form) }}
+{% endblock %}
